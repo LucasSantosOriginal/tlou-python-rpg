@@ -39,37 +39,9 @@ if escolha == '1':
         dado = random.randint(1, 20)  # Corrigido para randint
         print("Valor do dado foi de...", dado)
         if dado > 10:
-            print("Você achou a arma e ela está com 5 munições")
-            print('...')
-            sleep(1)
-            print('voce ouve um barulho de algo batendo na porta do porão.')
-            print('''
-            O que você faz?
-            [1] Vai em direção a porta 
-            [2] nada
-            ''')
-            escolha = input ('O que você faz? ')
-            if escolha == '1':
-                dado = random.randint(1,20)
-                print ('rolando um dado...', dado)
-                if dado > 12:
-                    print('A PORTA ABRE COM UM GRANDE ESTRONDO! E UM INFECTADO PULA EM VOCE')
-        else:
-            print("Você achou sua arma e ela está com apenas 2 munições")
-            print('...')
-            sleep(1)
-            print('voce ouve um barulho de algo batendo na porta do porão.')
-            print('''
-            O que você faz?
-            [1] Vai em direção a porta 
-            [2] nada
-            ''')
-            escolha = input('O que você faz? ')
-            if escolha == '1':
-                dado = random.randint(1, 20)
-                print('rolando um dado...', dado)
-                if dado < 12:
-                    print('a porta continua batendo...')
+            print ('Agora você tem uma arma!')
+        elif dado < 10:
+            print ('Você está tenso e não conseguiu achar sua arma')
 elif escolha == '2':
     print ('Ao seguir o sangue você vê uma porta que você nunca tinha visto antes '
            '\n ela parece seguir em direção ao porão')
